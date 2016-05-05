@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <otrs_config version="1.0" init="Framework">
+  <ConfigItem Name="AgentLogo" Required="0" Valid="1">
+   <Description Translatable="1">
+     O logo que será exibido na interface dos agentes. A URL deve ser relativa ao diretorio de temas.
+   </Description>
+   <Group>Framework</Group>
+   <SubGroup>Frontend::Agent</SubGroup>
+   <Setting>
+    <Hash>
+     <Item Key="URL">skins/Agent/adn_skin/img/logo.png</Item>
+     <Item Key="StyleTop">13px</Item>
+     <Item Key="StyleRight">75px</Item>
+     <Item Key="StyleHeight">67px</Item>
+     <Item Key="StyleWidth">244px</Item>
+    </Hash>
+   </Setting>
+  </ConfigItem>
+  <ConfigItem Name="Loader::Agent::Skin###ADN Skin" Required="0" Valid="1">
+   <Description Translatable="1">By SWQUality.</Description>
+   <Group>Framework</Group>
+   <SubGroup>Frontend::Agent</SubGroup>
+   <Setting>
+    <Hash>
+     <Item Key="InternalName">adn_skin</Item>
+     <Item Key="VisibleName">ADN_Skin</Item>
+     <Item Key="Description">By SWQUality</Item>
+     <Item Key="HomePage">www.swquality.com.br</Item>
+    </Hash>
+   </Setting>
+  </ConfigItem>
+ </otrs_config>	
