@@ -1,4 +1,10 @@
 #!/bin/bash
 # My first script
 
-echo "Hello World!"
+echo "Instalando ADN_Skin"
+echo "Apos finalizado, ir em Core::Web e alterar o DefaultSelectedSkin para adn_skin"
+
+cp adn_skin.xml /opt/otrs/Kernel/Config/Files/adn_skin.xml
+mkdir /opt/otrs/var/httpd/htdocs/skins/Agent/adn_skin
+cp Core.Default.css /opt/otrs/var/httpd/htdocs/skins/Agent/adn_skin/Core.Default.css
+cp -avr img /opt/otrs/var/httpd/htdocs/skins/Agent/adn_skin/img
